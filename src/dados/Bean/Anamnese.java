@@ -18,6 +18,7 @@ public class Anamnese {
     private boolean apto;
     private boolean inapto;
     private int id;
+    
 
     public int getId() {
         return id;
