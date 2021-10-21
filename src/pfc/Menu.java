@@ -49,7 +49,7 @@ public class Menu extends javax.swing.JFrame {
     //Método para inibir botões nas telas baseado no cargo ocupado pelo funcionário
     public String inibirBot(String busca) {
         dept = fDAO.listData(busca).getFuncao();
-        if (dept.equalsIgnoreCase("Enfermeiro") || dept.equalsIgnoreCase("Administrador")) {
+        if (dept.equalsIgnoreCase("Médico") || dept.equalsIgnoreCase("Administrador")){
             CadUsuario.setEnabled(true);
             jMenuUsuario.setEnabled(true);
 
@@ -314,6 +314,7 @@ public class Menu extends javax.swing.JFrame {
 
         jPrelat.setBackground(new java.awt.Color(255, 255, 255));
         jPrelat.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        jPrelat.setAutoscrolls(true);
 
         jL2.setBackground(new java.awt.Color(255, 255, 255));
         jL2.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -769,7 +770,7 @@ public class Menu extends javax.swing.JFrame {
                             .addGroup(jPrelatLayout.createSequentialGroup()
                                 .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(inten, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(inten, javax.swing.GroupLayout.DEFAULT_SIZE, 495, Short.MAX_VALUE))
                             .addGroup(jPrelatLayout.createSequentialGroup()
                                 .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -1313,10 +1314,12 @@ public class Menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Desktop, javax.swing.GroupLayout.DEFAULT_SIZE, 661, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Desktop, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
         );
 
-        setBounds(0, 0, 1203, 723);
+        setBounds(0, 0, 1203, 735);
     }// </editor-fold>//GEN-END:initComponents
 
     private void MenuImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuImprimirActionPerformed

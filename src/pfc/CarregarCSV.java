@@ -170,58 +170,58 @@ public class CarregarCSV {
                 Medic = trueFalse(medic, Medic);
                 dadocli.setMedicam(Medic);
 
-                String hiper = lista[29];
+                String hiper = lista[28];
                 boolean Hiper = false;
                 Hiper = trueFalse(hiper, Hiper);
                 dadocli.setHiperten(Hiper);
 
-                String diab = lista[31];
+                String diab = lista[29];
                 boolean Diab = false;
                 Diab = trueFalse(diab, Diab);
                 dadocli.setDiabete(Diab);
 
-                String reumat = lista[32];
+                String reumat = lista[30];
                 boolean Reumat = false;
                 Reumat = trueFalse(reumat, Reumat);
                 dadocli.setReumat(Reumat);
 
-                String epileps = lista[33];
+                String epileps = lista[31];
                 boolean Epileps = false;
                 Epileps = trueFalse(epileps, Epileps);
                 dadocli.setEpileps(Epileps);
 
-                String lombal = lista[34];
+                String lombal = lista[32];
                 boolean Lombal = false;
                 Lombal = trueFalse(lombal, Lombal);
                 dadocli.setLombal(Lombal);
 
-                String resp = lista[35];
+                String resp = lista[33];
                 boolean Resp = false;
                 Resp = trueFalse(resp, Resp);
                 dadocli.setProbResp(Resp);
 
-                String vasc = lista[36];
+                String vasc = lista[34];
                 boolean Vasc = false;
                 Vasc = trueFalse(vasc, Vasc);
                 dadocli.setProbVasc(Vasc);
 
-                String colest = lista[37];
+                String colest = lista[35];
                 boolean Colest = false;
                 Colest = trueFalse(colest, Colest);
                 dadocli.setColest(Colest);
 
-                String Peso = String.valueOf(lista[38].replace(",", "."));
+                String Peso = String.valueOf(lista[36].replace(",", "."));
                 double PESO = Double.valueOf(Peso);
                 dadocli.setPeso(PESO);
-                String Altura = String.valueOf(lista[39].replace(",", "."));
+                String Altura = String.valueOf(lista[37].replace(",", "."));
                 double ALTURA = Double.valueOf(Altura);
                 dadocli.setAltura(ALTURA);
 
                 //Chamada do método de cálculo de IMC e tratamento de número de casas decimais na classe CalcularIMC 
-                String Imc = String.valueOf(lista[40].replace(",", "."));
+                String Imc = String.valueOf(lista[38].replace(",", "."));
                 double IMC = Double.valueOf(Imc.replace(",", "."));
                 dadocli.setImc(IMC);
-                String Obesid = lista[41];
+                String Obesid = lista[39];
                 dadocli.setObesid(Obesid);
                 
                 // Chamada do método para salvar os dados na classe de Data Access Object dadoClinicoDAO.

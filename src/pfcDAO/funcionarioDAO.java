@@ -27,8 +27,8 @@ public class funcionarioDAO {
         PreparedStatement st = null;
         Connection on = cdb.getConnectData();
         try {
-            st = on.prepareStatement("INSERT INTO funcionario(id, nome, idade, fone, sexo, cpf, endereco, funcao, email"
-                    + ",dept, dataUlt, dataProx, infoAd)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            st = on.prepareStatement("INSERT INTO funcionario(id, nome, idade, fone, sexo, cpf, endereco, funcao,"
+                    + " email,dept, dataUlt, dataProx, infoAd)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
             st.setInt(1, func.getId());
             st.setString(2, func.getNome());
             st.setInt(3, func.getIdade());
